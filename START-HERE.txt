@@ -1,0 +1,31 @@
+CAREERPILOT AI — QUICK START (WINDOWS)
+
+1. Install Node.js 20 LTS from https://nodejs.org/ if Node/npm are not already installed.
+2. Extract this ZIP.
+3. Open the extracted careerpilot-ai folder in VS Code.
+4. Open Terminal > New Terminal. Confirm the terminal path is the careerpilot-ai root folder (the folder containing the main package.json).
+5. Run: npm run install:all
+6. In VS Code Explorer, open server/.env.example, copy it, paste it in the same server folder and rename the copy to .env.
+   You can also run this in PowerShell from the project root: Copy-Item server/.env.example server/.env
+7. For demo mode, leave OPENAI_API_KEY and MONGODB_URI blank in server/.env.
+8. Run: npm run dev
+9. Open http://localhost:5173 in Chrome.
+10. To stop the app, click the terminal and press Ctrl+C.
+
+FEATURES INCLUDED
+- Attractive responsive dashboard
+- Career profile and AI/demo skill-gap analysis
+- Four-week learning roadmap
+- Skill quiz with scoring and explanations
+- Task completion and progress history
+- Interview practice with AI/demo feedback
+- Streaming AI career coach
+- Local browser workspace storage and optional MongoDB persistence
+
+NOTES
+- Internet access is needed to install npm dependencies and to use the external OpenAI API.
+- Demo responses are not real AI output.
+- Keep API keys private. Never add server/.env to GitHub.
+- Without MongoDB, server data resets when the server restarts; browser workspace data is kept in local storage.
+- Authentication is not included, so do not publish this starter for real users or sensitive data until access controls are added.
+- See README.md for full setup, API endpoints, and troubleshooting.

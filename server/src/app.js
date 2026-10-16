@@ -27,6 +27,14 @@ app.use('/api', rateLimit({ windowMs: 15 * 60 * 1000, limit: 100, standardHeader
 
 app.use('/api/auth', authRoutes);
 app.use('/api', apiRoutes);
+
+app.get('/', (req, res) => {
+  res.status(200).json({
+    message: 'CareerPilot AI Backend is running',
+    status: 'OK'
+  });
+});
+
 app.use(notFoundHandler);
 app.use(errorHandler);
 export default app;
